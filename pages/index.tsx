@@ -1,7 +1,11 @@
+import React from 'react';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
-export default function Home() {
+import { IHomePage } from '@Interfaces';
+import { Row, Column } from '@Components';
+import styles from '@Styles/pages/Home.module.css';
+
+const Home: React.FC<IHomePage.IProps> = ({ }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,18 +23,21 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Column>
+         <Row>
+           <a href="https://nextjs.org/docs" className={styles.card}>
+             <h3>Documentation &rarr;</h3>
+             <p>Find in-depth information about Next.js features and API.</p>
+           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+           <a href="https://nextjs.org/learn" className={styles.card}>
+             <h3>Learn &rarr;</h3>
+             <p>Learn about Next.js in an interactive course with quizzes!</p>
+           </a>
+         </Row>
 
-          <a
+          <Row>
+            <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
@@ -47,7 +54,8 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+          </Row>
+        </Column>
       </main>
 
       <footer className={styles.footer}>
@@ -63,3 +71,4 @@ export default function Home() {
     </div>
   )
 }
+export default Home;

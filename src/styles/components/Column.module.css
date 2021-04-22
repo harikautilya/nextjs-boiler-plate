@@ -1,0 +1,19 @@
+.column_container{
+	display: flex;
+	flex-flow: column nowrap;
+
+}
+
+.expanded{
+	height: 100%;
+	flex: 1;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.column_center{
+	justify-content: center;
+	align-items: center;
+}

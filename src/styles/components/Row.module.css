@@ -1,0 +1,18 @@
+.row_container{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.expanded{
+	height: 100%;
+	flex: 1;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.row_center{
+	align-items: center;
+	justify-content: center;
+}
