@@ -1,0 +1,27 @@
+.text_h1{
+	font-size: 64px;
+}
+.text_h2{
+	font-size: 32px;
+}
+.text_h3{
+	font-size: 18px;
+}
+.text_h4{
+	font-size: 16px;
+}
+.text_c1{
+	font-size: 12px;
+}
+.text_c2{
+	font-size: 10px;
+}
+.text_c3{
+	font-size: 8px;
+}
+.text_c4{
+	font-size: 6px;
+}
+.text_bold{
+	font-weight: 400;
+}

@@ -1,0 +1,9 @@
+.section_container{
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.wrap{
+	min-height: unset;
+}
